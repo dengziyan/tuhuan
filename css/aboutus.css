@@ -1,0 +1,322 @@
+  *{
+    margin: 0;
+    padding: 0;
+ }
+ ul{
+    list-style: none;
+ }
+b{
+    font-weight: normal;
+    display: block;
+}
+i{
+    font-style: normal;
+    display: block;
+}
+u{
+    text-decoration: none;
+    display: block;
+}
+ body{
+    color: #666;
+    font-style: normal;
+    font-family: "SourceHanSansCN-Light",
+    "Lantinghei SC","Open Sans",
+    "Hiragino Sans GB","Microsoft YaHei",
+    "STHeiti-Light","WenQuanYi Micro Hei",
+    "Arial","SimSun","sans-serif";
+    font-size: 14px;
+ }
+header{
+    position: fixed;
+    width: 100%;
+    z-index: 999;
+ }
+header .navbar-default {
+    box-shadow: 0 1px 4px rgba(0,0,0,.1);
+    margin-bottom: 0;
+    z-index: 1000;
+    background-color: rgba(255,255,255,.98);
+}
+header .navbar-header .navbar-brand {
+    margin-left: 15px;
+    padding: 0px;
+}
+header .navbar-header .th-logo{
+	width: 130px;
+	height: 80px;
+}
+
+header .th-logo img{
+	width: 130px;
+}
+
+
+header .navbar-collapse li{
+	margin-top: 20px;
+}
+
+main .carousel-control span{
+	z-index: 9999;
+}
+main #carousel-example-generic{
+    position: relative;
+}
+                    /* 轮播小圆圈 */
+#carousel-example-generic .carousel-indicators{
+    z-index: 100;
+}
+                    /* 轮播字幕 */
+
+@media (max-width: 1152px) { 
+
+}
+main .carousel2{
+    display: none;
+}
+main .carousel-inner .carousel-caption{
+    top: 87px;
+    text-align: left;
+}
+main .carousel-inner .carousel-caption .cpt2{
+    top: 87px;
+    right: 50px;
+    text-align: left;
+}
+main .carousel-inner h4{
+    color: white;
+    font-size: 5rem;
+}
+main .carousel-inner p{
+    color: white;
+    font-size: 2.5rem;
+}
+main .carousel-inner .blackWork h4{
+    color: black;
+    font-size: 5rem;
+}
+main .carousel-inner .blackWork p{
+    font-size: 2.5rem;
+    background-color: rgba(59, 190, 122, .9);
+    text-align: center; 
+    border-radius: 2px;
+    width: 40%;
+}
+
+                    /* 轮播图字体变化 */
+@media (max-width: 778px) { 
+  main .carousel-inner h4{
+        color: white;
+        font-size: 2rem;
+    }
+    main .carousel-inner p{
+        color: white;
+        font-size: 1rem;
+    }
+    main .carousel-inner .blackWork h4{
+        color: black;
+        font-size: 2rem;
+    }
+    main .carousel-inner .blackWork p{
+        font-size: 1rem;
+        background-color: rgba(59, 190, 122, .9);
+        text-align: center; 
+        border-radius: 2px;
+        width: 40%;
+    }
+    main .carousel-inner .carousel-caption{
+        top: 150px;
+        text-align: left;
+    }
+    main .carousel-inner .carousel-caption .cpt2{
+        top: 150px;
+        right: 50px;
+        text-align: left;
+    }
+}
+@media (max-width: 1000px) { 
+  main .carousel-inner h4{
+        color: white;
+        font-size: 3.5rem;
+    }
+    main .carousel-inner p{
+        color: white;
+        font-size: 2rem;
+    }
+    main .carousel-inner .blackWork h4{
+        color: black;
+        font-size: 3.5rem;
+    }
+    main .carousel-inner .blackWork p{
+        font-size: 2rem;
+        background-color: rgba(59, 190, 122, .9);
+        text-align: center; 
+        border-radius: 2px;
+        width: 40%;
+    }
+
+}
+@media (max-width: 538px) { 
+ main .carousel-inner img{
+        height: 300px !important;
+    }
+}
+.delay_1{
+    animation-delay: 400ms;
+}
+.delay_2{
+    animation-delay: 420ms;
+}
+.delay_3{
+    animation-delay: 440ms;
+}
+
+/* 轮播左右按钮 */
+#carousel-example-generic .left,
+#carousel-example-generic .right{
+    z-index: 100;
+}
+main .text{
+	text-align: center;
+	margin-top: 100px;
+    margin-bottom: 80px;
+}
+main .text h3,main .litspanner h3,main .future h3{
+	color: #333;
+    font-weight: normal;
+    font-family: "SourceHanSansCN-Light",
+    "Lantinghei SC","Open Sans","Hiragino Sans GB",
+    "Microsoft YaHei","STHeiti-Light","WenQuanYi Micro Hei",
+    "Arial","SimSun","sans-serif";
+}
+
+main .text .line,main .litspanner .line,main .future .line{
+	border-top: 1px solid #3bbe7a;
+    width: 30px;
+    margin: 20px auto 40px;
+}
+main .text .linh25{
+	line-height: 25px;
+}
+/* 理念 */
+main .idea{
+    list-style: none;
+}
+main .idea .thumbnail{
+	background: rgba(59,190,122,.8);
+    padding: 18% 10%;
+}
+main .idea li{
+    text-align: center;
+    border-radius: 2px;
+
+}
+main .idea h3,main .idea p{
+    color: rgba(255,255,255,.8);
+}
+main .idea img{
+    width: 80px;
+} 
+/* 小轮播图 */
+main .litspanner{
+	text-align: center;
+	margin-top: 100px;
+    margin-bottom: 80px;
+}
+main .litspanner .spanbox{
+    width: 100%;
+    height: 336px;
+    background: rgba(59,190,122,.8); 
+    overflow: hidden;
+}
+main .litspanner .col-md-8{
+    padding-right: 0px;
+    padding-left: 0px;
+}
+    
+main .litspanner .detail{    
+    padding: 1% 3%;
+}
+main .litspanner .detail img{
+    width: 80px;
+}
+main .litspanner .detail h4{
+    font-size: 18px;
+    color: white;
+    line-height: 50px;
+    margin-top: 2px;
+}
+main .litspanner .detail p{
+    color: white;
+    font-size: 14px;
+
+}
+main .detail .li{
+    display: none;
+}
+main .detail .li.current{
+    display: block;
+}
+/* 愿景 */
+main .future{
+    text-align: center;
+    width: 100%;
+}
+main .container{
+    padding-right: 0px;
+    padding-left: 0px;
+}
+main .future .futbgr{
+    height: 420px;
+    text-align: center;
+    background: url('../images/about-yuanjing.jpg') no-repeat 50% 0%;
+}
+main .future .linh25{
+    margin-bottom:80px ;
+}
+main .future .futbgr img{
+    width: 100px;
+    margin-top: 70px;
+    margin-bottom: 20px;
+}
+main .future .futbgr p{
+    color: white;
+    margin-bottom: 7px;
+}
+footer{
+    background-color: #333;
+    padding: 46.5px 0;
+}
+footer .container a{
+    color: rgba(170,170,170,.8);
+    padding-right: 2%;
+    padding-left: 2%;
+} 
+footer .container a:nth-of-type(1){
+    padding-left: 0px;
+}
+footer .container p{
+    font-size: 12px;
+    color: rgba(102,102,102,.8);
+    margin-top: 2%;
+}
+footer .container a:hover{
+    text-decoration: none;
+}
+footer .container .left{
+    float: left;
+}
+footer .container .right{
+    float: right;
+    
+}
+footer .container .right img{
+    width: 14%;
+    float: right;
+    margin-left: 7%;
+}
+@media (min-width:0px) and (max-width: 778px) { 
+    footer .container .right{
+        display: none;
+    }
+}

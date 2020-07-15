@@ -1,4 +1,4 @@
-  *{
+ *{
     margin: 0;
     padding: 0;
  }
@@ -30,10 +30,9 @@ u{
 header{
     position: fixed;
     width: 100%;
-    z-index: 999;
+    z-index: 99;
  }
 header .navbar-default {
-    /* padding: 15px 0; */
     box-shadow: 0 1px 4px rgba(0,0,0,.1);
     margin-bottom: 0;
     z-index: 1000;
@@ -44,85 +43,150 @@ header .navbar-header .navbar-brand {
     padding: 0px;
 }
 header .navbar-header .th-logo{
-	width: 130px;
-	height: 80px;
-/* 	background: url('../images/logo.PNG'); */
-
+    width: 130px;
+    height: 80px;
 }
 
 header .th-logo img{
-	width: 130px;
+    width: 130px;
 }
 
 
 header .navbar-collapse li{
-	margin-top: 20px;
+    margin-top: 20px;
 }
 
+
 main .carousel-control span{
-	z-index: 9999;
+    z-index: 9999;
 }
 main #carousel-example-generic{
     position: relative;
 }
-/* 轮播小圆圈 */
+                    /* 轮播小圆圈 */
 #carousel-example-generic .carousel-indicators{
     z-index: 100;
 }
-/* 轮播字幕 */
-#carousel-example-generic .bg{
+                    /* 轮播字幕 */
 
-    width: 100%;
-    height: 100%;
-    background: rgba(255,255,255,0.2);
-    padding-top: 10%;
-    left: 0px;
-    position: absolute;
-    z-index: 99;
-    top: -2px;
+@media (max-width: 1152px) { 
+
 }
-#carousel-example-generic .bg h4{
-    margin-left: 20%;
-    color: white;
-    font-size: 260%;
-    margin-top: 5%;
-}
-#carousel-example-generic .bg p{
-    margin-left: 20%;
-    color: white;
-    font-size: 150%;
-}
-#carousel-example-generic .bg .part1 h4,
-#carousel-example-generic .bg .part2 h4{
-    color: black;
-}
-#carousel-example-generic .bg .part1 p,
-#carousel-example-generic .bg .part2 p{
-    background-color: rgba(59, 190, 122, .9);
-    /* display: inline; */
-     text-align: center; 
-    border-radius: 2px;
-    padding: 5px 10px;
-    width: 20%;
-}
-#carousel-example-generic .bg .part{
+main .carousel2{
     display: none;
 }
-#carousel-example-generic .bg .part.current{
-    display: block;
+main .carousel-inner .carousel-caption{
+    top: 87px;
+    text-align: left;
 }
+main .carousel-inner .carousel-caption .cpt2{
+    top: 87px;
+    right: 50px;
+    text-align: left;
+}
+main .carousel-inner h4{
+    color: white;
+    font-size: 5rem;
+}
+main .carousel-inner p{
+    color: white;
+    font-size: 2.5rem;
+}
+main .carousel-inner .blackWork h4{
+    color: black;
+    font-size: 5rem;
+}
+main .carousel-inner .blackWork p{
+    font-size: 2.5rem;
+    background-color: rgba(59, 190, 122, .9);
+    text-align: center; 
+    border-radius: 2px;
+    width: 40%;
+}
+                    /* 轮播图字体变化 */
+
+@media (max-width: 778px) { 
+  main .carousel-inner h4{
+        color: white;
+        font-size: 2rem;
+    }
+    main .carousel-inner p{
+        color: white;
+        font-size: 1rem;
+    }
+    main .carousel-inner .blackWork h4{
+        color: black;
+        font-size: 2rem;
+    }
+    main .carousel-inner .blackWork p{
+        font-size: 1rem;
+        background-color: rgba(59, 190, 122, .9);
+        text-align: center; 
+        border-radius: 2px;
+        width: 40%;
+    }
+
+}
+@media (max-width: 1000px) { 
+ main .carousel-inner h4{
+        color: white;
+        font-size: 3.5rem;
+    }
+    main .carousel-inner p{
+        color: white;
+        font-size: 2rem;
+    }
+    main .carousel-inner .blackWork h4{
+        color: black;
+        font-size: 3.5rem;
+    }
+    main .carousel-inner .blackWork p{
+        font-size: 2rem;
+        background-color: rgba(59, 190, 122, .9);
+        text-align: center; 
+        border-radius: 2px;
+        width: 40%;
+    } 
+    main .carousel-inner .carousel-caption{
+        top: 150px;
+        text-align: left;
+    }
+    main .carousel-inner .carousel-caption .cpt2{
+        top: 150px;
+        right: 50px;
+        text-align: left;
+    }
+
+}
+@media (max-width: 538px) { 
+ main .carousel-inner img{
+        height: 300px !important;
+    }
+}
+.delay_1{
+    animation-delay: 400ms;
+}
+.delay_2{
+    animation-delay: 420ms;
+}
+.delay_3{
+    animation-delay: 440ms;
+}
+
 /* 轮播左右按钮 */
 #carousel-example-generic .left,
 #carousel-example-generic .right{
     z-index: 100;
 }
+
+
 main .text{
-	text-align: center;
-	margin-top: 100px;
+    text-align: center;
+    margin-top: 100px;
     margin-bottom: 80px;
 }
 main .text h3,main .litspanner h3,main .future h3{
-	color: #333;
+    color: #333;
     font-weight: normal;
     font-family: "SourceHanSansCN-Light",
     "Lantinghei SC","Open Sans","Hiragino Sans GB",
@@ -131,95 +195,335 @@ main .text h3,main .litspanner h3,main .future h3{
 }
 
 main .text .line,main .litspanner .line,main .future .line{
-	border-top: 1px solid #3bbe7a;
+    border-top: 1px solid #3bbe7a;
     width: 30px;
     margin: 20px auto 40px;
 }
 main .text .linh25{
-	line-height: 25px;
+    line-height: 25px;
 }
-/* 理念 */
-main .idea{
-    list-style: none;
+                        /* 小轮播图 */-
+main .spanbox{
+    background:  #eeefe9;
+    padding: 60px 0;
+    overflow:hidden;
+    position: relative;
+    width: 912px;
+    height: 292px;
+    position: relative;
 }
-main .idea .thumbnail{
-	background: rgba(59,190,122,.8);
-    padding: 18% 10%;
+main .spanbox ul{   
+    height: 292px;
+    width:200%;
+    position: relative;
+    left:0px;                
 }
-main .idea li{
+.spanbox .spanner li{
+    float: left;
+    width: 10%;
+    margin-top: 20px;
     text-align: center;
-    border-radius: 2px;
-
 }
-main .idea h3,main .idea p{
-    color: rgba(255,255,255,.8);
+@media (min-width: 768px) and (max-width: 992px) { 
+    main .spanbox ul{   
+        width:400%;
+              
+    }
+    .spanbox .spanner li{
+        width: 9%;
+    }
 }
-main .idea img{
-    width: 80px;
-} 
-/* 小轮播图 */
-main .litspanner{
-	text-align: center;
-	margin-top: 100px;
-    margin-bottom: 80px;
+@media (max-width: 768px)  { 
+    main .spanbox ul{   
+        width:1000%;             
+    }
+    .spanbox .spanner li{
+        width: 10%;
+    }
 }
-main .litspanner .spanbox{
-    width: 100%;
-    min-height: 394px;
-    background: rgba(59,190,122,.8); 
-}
-main .litspanner .col-md-8{
-    padding-right: 0px;
+.spanbox .container{
     padding-left: 0px;
+    padding-right: 0px;
 }
-    
-main .litspanner .detail{    
-    padding: 1% 3%;
-}
-main .litspanner .detail img{
-    width: 80px;
-}
-main .litspanner .detail h4{
-    font-size: 18px;
-    color: white;
-    line-height: 50px;
-}
-main .litspanner .detail p{
-    color: white;
-    font-size: 14px;
 
-}
-main .detail .li{
+.spanbox .describe{
     display: none;
 }
-main .detail .li.current{
+.spanbox .describe.current{
     display: block;
 }
-/* 愿景 */
-main .future{
-    text-align: center;
-    width: 100%;
+.spanbox .spanner li img{
+    border-radius: 50%;
+    width: 50%;
+    margin-bottom: 20px;
 }
-main .container{
+.spanbox span{
+   font-size:40px;
+   position:absolute;              
+   color:#fff;
+   cursor:pointer;
+   padding:2px 2px;
+   width: 2%;
+}
+.left{
+    left:10px;
+    top:80px;
+}
+.right{
+    right:10px;
+    top:80px;
+}
+
+main .pic>div{
+    max-width: 100%;
+    height: auto;
+}
+main .pic .col-xs-6{
     padding-right: 0px;
     padding-left: 0px;
 }
-main .future .futbgr{
-    height: 420px;
+main .pic img{
+    width: 100%;
+}
+main .pic{
+    position: relative;
+}
+main .pic span{
+    background-repeat: no-repeat;
+    background-position: center;
+    width: 8%;
+    height: 8%;
+    position: absolute;
+    left: 46%;
+    top: 40%;
+}
+main .text-pic .part4 span{
+    background: rgba(59,190,122,.95);
+    border-radius: 50%;
+    background-repeat: no-repeat;
+    background-position: center;
+    width: 12%;
+    height: 26%;
+    position: absolute;
+    left: 44%;
+    top: 36%;
     text-align: center;
-    background: url('../images/about-yuanjing.jpg') no-repeat 50% 0%;
-}
-main .future .linh25{
-    margin-bottom:80px ;
-}
-main .future .futbgr img{
-    width: 100px;
-    margin-top: 70px;
-    margin-bottom: 20px;
-}
-main .future .futbgr p{
     color: white;
-    margin-bottom: 7px;
+    font-size: 20px;
+}
+main .text-pic .part4 .picbg{
+    background-color: rgba(222,223,212,.4);
+    width: 100%;
+    padding-bottom:3.1% ;
+}
+main .text-pic .part4 .pic1{
+    margin-bottom: 15px;
+}
+main .text-pic .part4 span>p{
+    margin-top: 35%;
+    font-weight: bold;
+
+}
+main .text-pic .part5 .caption{
+    text-align: center;
+}
+main .text-pic .part5 h4{
+    font-size: 18px;
+    color: #333;
+}
+main .text-pic .part5 .text p{
+    margin-bottom: 0px;
+}
+main .text-pic .part5 .caption .line{
+    border-top: 1px solid #3bbe7a;
+    width: 30px;
+    margin: 10px auto 10px;
+}
+main .text-pic .part5 .caption p{
+    font-size: 12px;
+    color: #666;
+}
+                        /* 手机轮播  */
+main .mobSpan{
+    background-image: url('../images/shoujibei_icon.jpg');
+    background-position: center;
+    background-repeat: no-repeat;
+    background-size: cover;
+    width: 100%;
+    height: 660px;
+    margin-top: 98px;
+    position: relative;
+}
+.mobSpan .txtBox{
+    padding: 0 15px;
+    line-height: 1.8;
+    position: absolute;
+    left: 630px;
+    top: 150px;
+    color: white;
+}
+.mobSpan .txtBox h4{
+    font-size: 28px;
+    line-height: 40px;
+}
+.mobSpan .txtBox p{
+    font-size: 16px;
+}
+
+.mobSpan .txtBox .line{
+    border-top: 1px solid #3bbe7a;
+    width: 80px;
+    margin: 30px 0px; 
+}
+.mobSpan .txtBox li{
+    display: none;
+}
+.mobSpan .txtBox li.current{
+    display: block;
+}
+.delay_1{
+    animation-delay: 440ms;
+}
+.delay_2{
+    animation-delay: 420ms;
+}
+.delay_3{
+    animation-delay: 400ms;
+}
+
+
+.mobSpan .moblie{
+    position: relative;
+    float: left;
+    background: url('../images/shoujitu.png') no-repeat;
+    width: 310px;
+    height: 800px;
+    background-size: 100%;
+    margin-left: 10%;
+}
+.mobSpan .moblie img{
+    position: absolute;
+    display: block;
+    width: 252px;
+    left: 30px;
+    top: 174px;
+    opacity: 0;   
+}
+/* .mobSpan .moblie img:nth-of-type(2),
+.mobSpan .moblie img:nth-of-type(3),
+.mobSpan .moblie img:nth-of-type(4),
+.mobSpan .moblie img:nth-of-type(5){
+    
+} */
+
+.mobSpan .icon{
+    position: absolute;
+    bottom: 10px;
+    left: 630px;
+    /* clear: both; */
+}
+.mobSpan .icon li{
+    float: left;
+    width: 60px;
+    height: 60px;
+    border: 1px solid white;
+    border-radius: 50%;
+    margin: 10px;
+}
+.mobSpan .icon li:nth-of-type(1){
+    background: url('../images/zlzx.svg');
+}
+.mobSpan .icon li:nth-of-type(2){
+    background: url('../images/jkjc.svg');
+}
+.mobSpan .icon li:nth-of-type(3){
+    background: url('../images/zljh.svg');
+}
+.mobSpan .icon li:nth-of-type(4){
+    background: url('../images/tjsj.svg');
+}
+.mobSpan .icon li:nth-of-type(5){
+    background: url('../images/qygl.svg');
+}
+
+
+
+@media (max-width: 878px) { 
+    .mobSpan .icon {
+        display: none;
+    }
+    .mobSpan .txtBox{
+        display: none;
+     }
+
+}
+
+                        /* 鼓励模块 */
+main .encourage{
+    padding: 0px 45px;
+}
+main .encourage .module{
+    height: 400px;
+
+} 
+.encourage .module .dialogue{
+    min-height: 42%;
+    width: 88.89%;
+    background-color: #f0f0f0;
+    border-radius: 4px;
+    border: 1px solid #3bbe7a;
+    box-shadow: none;
+    z-index: 10;
+    margin: 0px auto;
+    padding: 40px 20px;
+    position: relative;
+}
+
+ .encourage .module .dialogue i{
+    float: left;
+    background-color: #aaa;
+    color: white;
+    margin-top: 15px;
+ }
+.encourage .module .dialogue u{
+    float: right ;
+    position: relative;
+    margin-top: 15px;
+}
+.encourage .module .dialogue b{
+    position: absolute;
+    background: url('../images/position-icon.svg') no-repeat;
+    width: 28%;
+    height: 60%;
+    left: -15%;
+    top: 20%;
+    
+}
+.encourage .module .dialogue .arrow{
+    background: #f0f0f0;
+    width: 20px;
+    height: 20px;
+    border-left: 1px solid #3bbe7a;
+    border-bottom: 1px solid #3bbe7a;
+    transform: rotate(-45deg);
+    position: absolute;
+    left: 48%;
+    bottom: -7%;
+}
+.encourage .module img:nth-of-type(1){
+    position: absolute;
+    width: 22%;
+    height: 44%;
+    left: 40%;
+    bottom: -66%;
+
+}
+.encourage .module img:nth-of-type(2){
+    border-radius: 50%;
+    position: absolute;
+    height: 20%;
+    left: 44%;
+    bottom: 91%;
 }
 footer{
     background-color: #333;

@@ -30,6 +30,7 @@ u{
 header{
 	position: fixed;
 	width: 100%;
+    z-index: 99;
  }
 header .navbar-default {
     /* padding: 15px 0; */
@@ -58,11 +59,18 @@ header .navbar-collapse li{
 	margin-top: 20px;
 }
 main .picbgb{
+    position: relative;
     width: 100%;
     height: 320px;
     background: url('../images/companydynamics-banner-2x.jpg') center;
     background-size: cover;
 
+}
+main .picbgb img{
+    position: absolute;
+    right: 10%;
+    top: 30%;
+    height: 25%;
 }
 main .diary{
     margin-top: 50px;

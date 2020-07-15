@@ -6,10 +6,10 @@
 	<meta name="viewport" content="width=device-width, initial-scale=1, maximum-scale=1, user-scalable=no">
 	<title>首页</title>
 	<link rel="stylesheet" href="css/bootstrap.min.css">
-	<link rel="stylesheet" href="css/index.css">
+	<link rel="stylesheet" href="css/health.css">
+	<link rel="stylesheet" href="css/animate.css">
 	<script src="js/jquery-3.0.0.min.js"></script>
 	<script src="js/bootstrap.min.js"></script>
-	
 </head>
 <body>
 	<header>
@@ -24,15 +24,15 @@
 		        <span class="icon-bar"></span>
 		      </button>
 		      <a class="navbar-brand th-logo" href="#">
-		      	<img src="images/logo.PNG" alt="">
+		      	<img src="images/logo.png" alt="">
 		      </a>
 		    </div>
 
 		    <!-- Collect the nav links, forms, and other content for toggling -->
 		    <div class="collapse navbar-collapse" id="bs-example-navbar-collapse-1">
 		      <ul class="nav navbar-nav navbar-right">
-		        <li><a href="#">关于我们</a></li>
-		        <li><a href="html/health.html">途欢健康</a></li>
+		        <li><a href="index.html">关于我们</a></li>
+		        <li><a href="#">途欢健康</a></li>
 		        <li><a href="html/price.html">价值聚焦</a></li>
 		        <li><a href="html/contact.html">联系我们</a></li>
 		        <li><a href="html/compony.html">公司动态</a></li>
@@ -54,45 +54,37 @@
 		  </ol>
 
 		  <!-- Wrapper for slides -->
-		  <div class="carousel-inner" role="listbox">
-		    <div class="item active">
-		      <img src="images/about-us-banner-2x-2.jpg" alt="...">
-		      <div class="carousel-caption"></div>
-		    </div>
-		    <div class="item">
-		      <img src="images/about-us-banner-2x.jpg" alt="...">
-		      <div class="carousel-caption"></div>
-		    </div>
-		    <div class="item">
+		  <ul class="carousel1 carousel-inner" role="listbox">
+		    <li class="item active">
 		      <img src="images/innovative-banner.jpg" alt="...">
-		      <div class="carousel-caption"></div>
-		    </div>
-		    <div class="item">
+		      <div class="blackWork carousel-caption">
+		      		<h4 class="animate__animated animate__slideInDown delay_1">融合医疗创新，连接千家万户</h4>
+			        <p class="animate__animated animate__slideInUp delay_1">途欢助力成都人民奔小康</p>
+		      </div>
+		    </li>
+		    <li class="item">
+		      <img src="images/future-start-banner-2x.jpg" alt="...">
+		      <div class="blackWork carousel-caption">
+		      		<h4 class="animate__animated animate__slideInDown delay_1"> “星未来InnoStar”全球创新创业大赛</h4>
+			        <h4 class="animate__animated animate__slideInDown delay_1"> 途欢健康惊艳斩获二等奖</h4>
+			        <p class="animate__animated animate__slideInUp delay_1">成都站落幕</p>
+		      </div>
+		    </li>
+		    <li class="item">
 		      <img src="images/about-us-banner-2x.jpg" alt="...">
-		      <div class="carousel-caption"></div>
-		    </div>
-		  </div>
-
-		  <!-- 字幕 -->
-			<div class="bg">
-			    <div class="part part1 current">
-			         <h4 class="animate__animated animate__backInDown">融合医疗创新，连接千家万户</h4>
-			        <p class="animate__animated animate__slideInUp">途欢助力成都人民奔小康</p>
-			    </div>
-			    <div class="part part2">
-			        <h4 class="animate__animated animate__backInDown"> “星未来InnoStar”全球创新创业大赛</h4>
-			         <h4 class="animate__animated animate__backInDown"> 途欢健康惊艳斩获二等奖</h4>
-			        <p class="animate__animated animate__slideInUp">成都站落幕</p>
-			    </div>
-			    <div class="part part3">
-			         <h4 class="animate__animated animate__backInDown">人生旅途&nbsp;欢&nbsp;悦同行</h4>
-			        <p class="animate__animated animate__slideInUp">To Health To Happiness</p>
-			    </div>
-			    <div class="part part4">
-			         <h4 class="animate__animated animate__backInDown">连接您与复杂医学世界的桥梁</h4>
-			        <p class="animate__animated animate__slideInUp">Getting Access To Better Quality Health Care</p>
-			    </div>
-			 </div>
+		      <div class=" carousel-caption">
+		      		<h4 class="animate__animated animate__slideInDown delay_1">人生旅途&nbsp;欢&nbsp;悦同行</h4>
+			        <p class="animate__animated animate__slideInUp delay_1">To Health To Happiness</p>
+		      </div>
+		    </li>
+		    <li class="item">
+		      <img src="images/about-us-banner-2x-2.jpg" alt="...">
+		      <div class="carousel-caption cpt2">
+		      	 	<h4 class="animate__animated animate__slideInDown delay_1">连接您与复杂医学世界的桥梁</h4>
+			        <p class="animate__animated animate__slideInUp delay_1">Getting Access To Better Quality Health Care</p>
+		      </div>
+		    </li>
+		  </ul>	
 		  <!-- Controls -->
 		  <a class="left carousel-control" href="#carousel-example-generic" role="button" data-slide="prev">
 		    <span class="glyphicon glyphicon-chevron-left" aria-hidden="true"></span>
@@ -103,133 +95,313 @@
 		    <span class="sr-only">Next</span>
 		  </a>
 		</div>
-
 		<div class="text container">
-			<h3>源自医疗、助力医疗、根植医疗</h3>
+			<h3>以专业维护您的健康</h3>
 			<p class="line"></p>
-			<p class="linh25">途欢，以创新科技驱动，以绝对的医学专业为前提和基石，将移动互联网、数据技术应用于健康领域</p>
-			<p class="linh25">用科技，改善医疗服务的效率和连续性；用科技，让优质医疗资源惠及更多的家庭；用科技，让更多的人受惠于医疗保健的预防价值，而不只是“因病治疗”</p>
-			<p class="linh25">途欢，帮助您获得更便捷的医疗健康服务与更优质的健康维护方案</p>
+			<p class="linh25">途欢希冀于用专业的力量温情传递健康的意义，用医学的理念与技术帮助大众更科学的维护健康</p>			
 		</div>
-
-		<!-- 理念（idea） -->
-		<ul class="idea container">
-			<li class="col-md-4">
-			    <div class="thumbnail">
-			        <img src="images/puhui.svg" alt="...">
-			        <div class="caption">
-			          <h3>普惠</h3>
-			          <p class="f12">为大众提供更高品质的医疗健康服务</p>
-			          <p class="f12">帮助大众在健康维护中获益</p>
-			          
-			        </div>
-			    </div>
-			</li>
-			<li class="col-md-4">
-			    <div class="thumbnail">
-			        <img src="images/chuangxin.svg" alt="...">
-			        <div class="caption">
-			          <h3>创新</h3>
-			          <p class="f12">协同现有医疗体系，主动管理式医疗服务</p>
-			          <p class="f12">更好的维护大众健康、实现价值医疗</p>
-			          
-			        </div>
-			    </div>
-			</li>
-			<li class="col-md-4">
-			    <div class="thumbnail">
-			        <img src="images/chonggou.svg" alt="...">
-			        <div class="caption">
-			          <h3>重构</h3>
-			          <p class="f12">以前瞻视野重构医疗健康服务模式</p>
-			          <p class="f12">实现大众健康价值与医生医疗价值回归</p>
-			          
-			        </div>
-			    </div>
-			</li>		
-		</ul>
-		<div class="litspanner container">
-			<h3>途欢优质的医疗服务团队</h3>
-			<p class="line"></p>
-			<div class="spanbox">
-				<div class="span carousel slide  col-md-8" data-ride="carousel">
-				<div class="carousel-inner" role="listbox">
-				    <div class="item active">
-				      <img src="images/abus-litspanner1.jpg" alt="...">
-				      <div class="carousel-caption">
-				        ...
-				      </div>
-				    </div>
-				    <div class="item">
-				      <img src="images/abus-litspanner2.jpg" alt="...">
-				      <div class="carousel-caption">
-				        ...
-				      </div>
-				    </div>
-				    <div class="item">
-				      <img src="images/abus-litspanner3.jpg" alt="...">
-				      <div class="carousel-caption">
-				        ...
-				      </div>
-				    </div>
-				    <div class="item">
-				      <img src="images/abus-litspanner4.jpg" alt="...">
-				      <div class="carousel-caption">
-				        ...
-				      </div>
-				    </div>
-				  </div>
-				
+		<!-- 小轮播 -->
+		<div class="spanbox  container" style="overflow: hidden;position: relative;">
+			<ul class="spanner">
+				<li>
+					<img src="images/garden01.jpg" alt="">
+					<div class="describe">
+						<h4>综合全面健康评估</h4>
+						<p>基于历史体检报告与日常健康状况，综合评估您的健康</p>
+					</div>					
+				</li>
+				<li>
+					<img src="images/garden02.jpg" alt="">
+					<div class="describe">
+						<h4>综合全面健康评估</h4>
+						<p>基于历史体检报告与日常健康状况，综合评估您的健康</p>
+					</div>					
+				</li>
+				<li>
+					<img src="images/garden03.jpg" alt="">
+					<div class="describe current">
+						<h4>综合全面健康评估</h4>
+						<p>基于历史体检报告与日常健康状况，综合评估您的健康</p>
+					</div>					
+				</li>
+				<li>
+					<img src="images/garden04.jpg" alt="">
+					<div class="describe">
+						<h4>综合全面健康评估</h4>
+						<p>基于历史体检报告与日常健康状况，综合评估您的健康</p>
+					</div>					
+				</li>
+				<li>
+					<img src="images/garden05.jpg" alt="">
+					<div class="describe">
+						<h4>综合全面健康评估</h4>
+						<p>基于历史体检报告与日常健康状况，综合评估您的健康</p>
+					</div>					
+				</li>
+				<li>
+					<img src="images/garden01.jpg" alt="">
+					<div class="describe">
+						<h4>综合全面健康评估</h4>
+						<p>基于历史体检报告与日常健康状况，综合评估您的健康</p>
+					</div>					
+				</li>
+				<li>
+					<img src="images/garden02.jpg" alt="">
+					<div class="describe">
+						<h4>综合全面健康评估</h4>
+						<p>基于历史体检报告与日常健康状况，综合评估您的健康</p>
+					</div>					
+				</li>
+				<li>
+					<img src="images/garden03.jpg" alt="">
+					<div class="describe">
+						<h4>综合全面健康评估</h4>
+						<p>基于历史体检报告与日常健康状况，综合评估您的健康</p>
+					</div>					
+				</li>
+				<li>
+					<img src="images/garden04.jpg" alt="">
+					<div class="describe">
+						<h4>综合全面健康评估</h4>
+						<p>基于历史体检报告与日常健康状况，综合评估您的健康</p>
+					</div>					
+				</li>
+				<li>
+					<img src="images/garden05.jpg" alt="">
+					<div class="describe">
+						<h4>综合全面健康评估</h4>
+						<p>基于历史体检报告与日常健康状况，综合评估您的健康</p>
+					</div>					
+				</li>
+			</ul>	
+			<span class="left"><img src="images/mis-prev-icon.svg" alt=""></span>
+    		<span class="right"><img src="images/mis-next-icon.svg" alt=""></span>
+            <!-- <ol>
+                <li class="current"></li>
+                <li></li>
+                <li></li>
+                <li></li>
+                <li></li>
+                <li></li>
+            </ol> -->
+		</div>
+		<!-- 文字和图片 -->
+		<div class="text-pic">
+			<div class="part1">
+				<div class="text container">
+						<p class="linh25">途欢健康，协同三甲医院医生，依据您的近期体检报告及日常情况</p>	
+						<p class="linh25">面对面评估您的健康状况及风险，制定健康（诊疗）计划</p>
+						<p class="line"></p>
+						<p class="linh25">既往，只体检，体检结果无人管</p>			
 				</div>
-				<div class="detail col-md-4">
-				<ul>
-					<li class="li animate__animated animate__backInDown current">
-						<img src="images/jiankangguwen-ico.png" alt="...">
-					<h4>个人专属健康顾问</h4>
-					<p>
-                                您与医生间的纽带工作者，拥有多年临床及健康管理工作经验，令您与医生的沟通更有质量，帮助您获得更精准的医疗服务
-                             </p>
-					</li>
-					<li class="li animate__animated animate__backInDown">
-						<img src="images/xietiaozhuanyuan-ico.png" alt="...">
-					<h4>医疗协调专员</h4>
-					<p>
-                                您与家人的医疗服务协调顾问，拥有多年临床工作背景和分诊经验，给予您和家人必要的就医指导，帮助您选择适需的科室就医、获得专科医生线上预诊服务，或为您连接您所需的医疗服务
-                            </p>
-					</li>
-					<li class="li animate__animated animate__backInDown">
-						<img src="images/jiatingyisheng-ico.png" alt="...">
-					<h4>途欢家庭医生</h4>
-					<p>
-                                您与家人的健康守门人。解决您与家庭日常大多数的医疗需求及慢性疾病稳定期的治疗、随访与管理。在途欢健康管理平台与健康顾问支持下，协助您完成更精准，更有价值的诊疗
-                            </p>
-					</li>
-					<li class="li animate__animated animate__backInDown">
-						<img src="images/tuhuandaifu-ico.png" alt="...">
-					<h4>途欢大夫</h4>
-					<p>
-                                如您与家人患有慢性疾病，定期为您连接三甲医院专科医生，并评估指导您的诊疗方案。当家庭发生临床医疗需求，将为您推荐并连接最适宜的医生与专家，确保获得更优的医疗解决方案
-                            </p>
-					</li>
-				</ul>
+				<div class="pic container">
+					<div class="pic1 col-xs-6">
+							<img src="images/tuhuan1_l2x.jpg" alt="">
+					</div>
+					<div class="pic2 col-xs-6">
+							<img src="images/tuhuan1_r2x.jpg" alt="">								
+					</div>
+					<span><img src="images/zljh-logo-icon.png" alt=""></span>	
 				</div>				
 			</div>
-			
-			
-		</div>
-		<!-- 远景 -->
-		<div class="future container">
-			<h3>途欢的愿景</h3>
-			<p class="line"></p>
-			<p class="linh25">永怀专业信念，以前瞻视野，定义医疗健康新未来</p>
-			<div class="futbgr">
-				<img src="images/lthyj-ogo.svg" alt="">
-				<p>途欢健康，协同于现有的医疗服务体系，致力于构建更精准的医疗保健模式</p>
-				<p>途欢健康，以信息技术为基础，移动互联网平台为工具、以三甲医院医生、社区医院医生、医生助理组成的"责任医疗团队"</p>
-				<p>为大众提供基于个体与疾病的主动管理式医疗服务</p>
+			<div class="part2">
+				<div class="text container">
+						<p class="linh25">途欢健康，专业、系统、持续的记录您的健康</p>	
+						<p class="linh25">包含历史体检数据、历史诊疗与日常监控随访数据等，成为您就诊时，医生诊疗决策最有力协助</p>
+						<p class="line"></p>
+						<p class="linh25">记录随手丢，病例找不到，医嘱记不住</p>		
+				</div>
+				<div class="pic container">
+					<div class="pic1 col-xs-6">
+							<img src="images/tuhuan3_l2x.jpg" alt="">
+					</div>
+					<div class="pic2 col-xs-6">
+							<img src="images/tuhuan4_r2x.jpg" alt="">									
+					</div>
+					<span><img src="images/hzsj-logo-icon.png" alt=""></span>	
+				</div>				
+			</div>
+			<div class="part3">
+				<div class="text container">
+						<p class="linh25">专业临床医学背景的途欢医生助理仿佛您的家人，时刻关注着您的健康</p>	
+						<p class="linh25">通过主动持续的干预与管理，为您提供个体化的健康服务</p>
+						<p class="line"></p>
+						<p class="linh25">对健康关注，却因缺少专业知识而束手无策</p>		
+				</div>
+				<div class="pic container">
+					<div class="pic1 col-xs-6">
+							<img src="images/tuhuan5_l2x.jpg" alt="">
+					</div>
+					<div class="pic2 col-xs-6">
+							<img src="images/tuhuan4_r2x.jpg" alt="">		
+								
+					</div>
+					<span><img src="images/hzgl-logo-icon.png" alt=""></span>
+				</div>				
+			</div>
+			<div class="part4">
+				<div class="text container">
+						<h4>科技助力医疗创新,实现更高协同价值</h4>
+						<p class="line"></p>
+						<p class="linh25">在途欢医疗健康管理平台的支持下</p>	
+						<p class="linh25">以社区医院家庭医生及途欢个人专属健康顾问为中心，集合三甲医院顶尖专家、权威专科医生的“责任医疗团队”</p>
+						<p class="linh25">共同为您和家人提供高度协同的主动管理式医疗健康服务：日常健康管理，健康风险评估与风险因素管理，医疗服务连接等</p>		
+				</div>
+				<div class="picbg">
+					<div class="pic container">
+						<div class="pic1">
+								<img src="images/fuwutixi-11.jpg" alt="">
+						</div>
+						<div class="pic2">
+								<img src="images/fuwutixi-2.jpg" alt="">										
+						</div>
+						<span><p>服务体系</p></span>
+					</div>					
+				</div>							
+			</div>
+			<div class="part5">
+				<div class="text container">
+						<h3>以您为中心,更便捷的健康体验</h3>
+						<p class="line"></p>		
+				</div>	
+				<ul class="idea container">
+					<li class="col-md-3">
+					    <div class="thumbnail">
+					        <img src="images/center-img-01.jpg" alt="...">
+					        <div class="caption">
+					          <h4>更了解您</h4>
+					          <p class="line"></p>
+					          <p class="f12">为您建立的个人电子健康档案，全面记录您的日常健康数据、医疗记录，是医生更精准诊疗的基础</p>
+					          
+					        </div>
+					    </div>
+					</li>
+					<li class="col-md-3">
+					    <div class="thumbnail">
+					        <img src="images/center-img-02.jpg" alt="...">
+					        <div class="caption">
+					          <h4>时刻关注您</h4>
+					          <p class="line"></p>
+					          <p class="f12">将人工智能运用于健康数据的智能检测，持续、动态的管理您的健康数据，更早发现潜在健康风险</p>
+					        </div>
+					    </div>
+					</li>
+					<li class="col-md-3">
+					    <div class="thumbnail">
+					        <img src="images/center-img-03.jpg" alt="...">
+					        <div class="caption">
+					          <h4>离您更近</h4>
+					          <p class="line"></p>
+					          <p class="f12">与熟悉您健康的途欢大夫、家庭医生、专属健康顾问进行在线咨询，随时随地获得更便捷的健康服务</p>
+					          
+					        </div>
+					    </div>
+					</li>
+					<li class="col-md-3">
+					    <div class="thumbnail">
+					        <img src="images/center-img-04.jpg" alt="...">
+					        <div class="caption">
+					          <h4>家人般守护您</h4>
+					          <p class="line"></p>
+					          <p class="f12">健康顾问与家庭医生为您预判并连接您所适需医疗方案，帮助您获得更精准、更有效率的医疗服务</p>					          
+					        </div>
+					    </div>
+					</li>			
+				</ul>
 			</div>
 		</div>
-
+		<!-- 手机轮播 -->
+		<div class="mobSpan">
+			<div class="spanBox container">
+				<ul class="txtBox">
+					<li class="current">
+						<h4 class=" animate__animated animate__slideInUp .delay_1">随时随地</h4>
+						<h4 class=" animate__animated animate__slideInUp .delay_1">咨询您的专属健康顾问</h4>
+						<p class="line animate__animated animate__slideInUp .delay_2" ></p>
+						<p class=" animate__animated animate__slideInUp .delay_3">具有丰富临床医学经验的途欢医生助理团队，为您提供在线的健康咨询服务、与您进行及时的沟通</p> 
+					</li>
+					<li>
+						<h4 class=" animate__animated animate__slideInUp .delay_1">智能监测</h4>
+						<h4 class=" animate__animated animate__slideInUp .delay_1">管理您的健康指标</h4>
+						<p class="line animate__animated animate__slideInUp .delay_2"></p>
+						<p class=" animate__animated animate__slideInUp .delay_3">运用大数据进行系统的健康数据监测，数据异常时及时预警，令您与家人更早关注健康风险、更有效的预防与管控疾病发生</p> 
+					</li>
+					<li>
+						<h4 class=" animate__animated animate__slideInUp .delay_1">权威制定</h4>
+						<h4 class=" animate__animated animate__slideInUp .delay_1">专属于您的诊疗计划</h4>
+						<p class="line animate__animated animate__slideInUp .delay_2"></p>
+						<p class=" animate__animated animate__slideInUp .delay_3">三甲医院专家医生根据您的健康状况制定持续、全面、个体化的治疗计划与健康管理计划</p> 
+					</li>
+					<li>
+						<h4 class=" animate__animated animate__slideInUp .delay_1">便捷记录</h4>
+						<h4 class=" animate__animated animate__slideInUp .delay_1">健康状况轻松掌握</h4>
+						<p class="line animate__animated animate__slideInUp .delay_2"></p>
+						<p class=" animate__animated animate__slideInUp .delay_3">为您提供综合的数据信息系统，记录健康数据与指标，全面掌握健康状况，深度分析健康数据</p> 
+					</li>
+					<li>
+						<h4 class=" animate__animated animate__slideInUp .delay_1">不论远近</h4>
+						<h4 class=" animate__animated animate__slideInUp .delay_1">总为至亲送上关怀</h4>
+						<p class="line animate__animated animate__slideInUp .delay_2"></p>
+						<p class=" animate__animated animate__slideInUp .delay_3"> 拉近您与亲人之间的距离，健康数据与家人共享，异常情况实时提醒，时刻关怀亲人，守护家庭健康</p> 
+					</li>               
+                                                    
+				</ul>
+				<div class="moblie">
+					<img src="images/zlzx-icon.jpg" alt="" style="opacity: 1">
+					<img src="images/jkjc-icon.jpg" alt="">
+					<img src="images/zljh-icon.jpg" alt="">
+					<img src="images/tjsj.jpg" alt="">
+					<img src="images/qygl-icon.jpg" alt="">
+				</div>
+				<ul class="icon"> 
+					<li style="background-color:rgba(59,190,122,.9);"></li>
+					<li></li>
+					<li></li>
+					<li></li>
+					<li></li>
+				</ul>
+				<!-- <div class="icon"><img src="../images/zlzx.svg" alt=""></div> -->
+			</div>			
+		</div>
+		<div class="text container">
+			<h3>用户的鼓励</h3>
+			<p class="line"></p>
+			<p class="linh25">途欢健康、协同于现有的医疗服务体系，致力于构建更精准的医疗保健模式</p>			
+		</div>
+		<div class="encourage container">
+			<div class="module col-lg-4 col-md-6">
+				
+				<div class="dialogue">
+					<p>
+                            我长期坐办公室，吃油炸食品，在途欢进行综合健康评估时，发现已有糖尿病前期症状，在医生助理的指导下，我在调节饮食和运动中逐渐恢复。</p>
+                    <p><i>糖尿病前期</i><u>四川成都市<b></b></u></p>
+                    <div class="arrow"></div>
+                    <img src="images/yhgl-icon.svg" alt="">
+                    <img src="images/1-160513163232312.jpg" alt="">
+				</div>
+				
+			</div>
+			<div class="module col-lg-4 col-md-6">
+				<div class="dialogue">
+					<p>
+                            母亲的高血压一直控制的不好，用途欢不但可以记录血压、还有医生助理来管控，管理她的饮食，使用之后血压控制的越来越好。</p>
+                    <p><i>高血压3年</i><u>四川成都市<b></b></u></p>
+                     <div class="arrow"></div>
+                     <img src="images/yhgl-icon.svg" alt="">
+                     <img src="images/1-16051316314KM.jpg" alt="">
+				</div>
+			</div>
+			<div class="module col-lg-4 col-md-6">
+				<div class="dialogue">
+					<p>
+                            因为长期加班，身体老有些小毛病，医生助理非常很专业、也很有亲和力，让我随时了解自己的健康状况，改善身体状况，更有活力。</p>
+                    <p><i>亚健康用户</i><u>四川成都市<b></b></u></p>
+                     <div class="arrow"></div>
+                     <img src="images/yhgl-icon.svg" alt="">
+                     <img src="images/1-16051316310L31.jpg" alt="">
+				</div>
+			</div>
+		</div>		
 	</main>
 	<footer>
 		<div class="container">
@@ -241,8 +413,8 @@
 				<p>Copyright © 2018 途欢医疗健康科技有限公司 蜀ICP备15025302号-1</p>
 			</div>
 			<div class="right">
-				<img src="../images/wewix-ico.svg" alt="">
-				<img src="../images/shouji-logo-icon.svg" alt="">
+				<img src="images/wewix-ico.svg" alt="">
+				<img src="images/shouji-logo-icon.svg" alt="">
 
 			</div>
 			
@@ -250,8 +422,6 @@
 		</div>
 
 	</footer>
-
-	
 	<script src="js/index.js"></script>
 </body>
 </html>

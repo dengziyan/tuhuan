@@ -30,10 +30,9 @@ u{
 header{
     position: fixed;
     width: 100%;
-    z-index: 99;
+    z-index: 100;
  }
 header .navbar-default {
-    /* padding: 15px 0; */
     box-shadow: 0 1px 4px rgba(0,0,0,.1);
     margin-bottom: 0;
     z-index: 1000;
@@ -46,8 +45,6 @@ header .navbar-header .navbar-brand {
 header .navbar-header .th-logo{
 	width: 130px;
 	height: 80px;
-/* 	background: url('../images/logo.PNG'); */
-
 }
 
 header .th-logo img{
@@ -58,6 +55,130 @@ header .th-logo img{
 header .navbar-collapse li{
 	margin-top: 20px;
 }
+
+
+main .carousel-control span{
+    z-index: 99;
+}
+main #carousel-example-generic{
+    position: relative;
+}
+                    /* 轮播小圆圈 */
+#carousel-example-generic .carousel-indicators{
+    z-index: 100;
+}
+                    /* 轮播字幕 */
+
+@media (max-width: 1152px) { 
+
+}
+main .carousel2{
+    display: none;
+}
+main .carousel-inner .carousel-caption{
+    top: 87px;
+    text-align: left;
+}
+main .carousel-inner .carousel-caption .cpt2{
+    top: 87px;
+    right: 50px;
+    text-align: left;
+}
+main .carousel-inner h4{
+    color: white;
+    font-size: 5rem;
+}
+main .carousel-inner p{
+    color: white;
+    font-size: 2.5rem;
+}
+main .carousel-inner .blackWork h4{
+    color: black;
+    font-size: 5rem;
+}
+main .carousel-inner .blackWork p{
+    font-size: 2.5rem;
+    background-color: rgba(59, 190, 122, .9);
+    text-align: center; 
+    border-radius: 2px;
+    width: 40%;
+}
+                    /* 轮播图字体变化 */
+
+@media (max-width: 778px) { 
+  main .carousel-inner h4{
+        color: white;
+        font-size: 2rem;
+    }
+    main .carousel-inner p{
+        color: white;
+        font-size: 1rem;
+    }
+    main .carousel-inner .blackWork h4{
+        color: black;
+        font-size: 2rem;
+    }
+    main .carousel-inner .blackWork p{
+        font-size: 1rem;
+        background-color: rgba(59, 190, 122, .9);
+        text-align: center; 
+        border-radius: 2px;
+        width: 40%;
+    }
+
+}
+@media (max-width: 1000px) { 
+ main .carousel-inner h4{
+        color: white;
+        font-size: 3.5rem;
+    }
+    main .carousel-inner p{
+        color: white;
+        font-size: 2rem;
+    }
+    main .carousel-inner .blackWork h4{
+        color: black;
+        font-size: 3.5rem;
+    }
+    main .carousel-inner .blackWork p{
+        font-size: 2rem;
+        background-color: rgba(59, 190, 122, .9);
+        text-align: center; 
+        border-radius: 2px;
+        width: 40%;
+    } 
+    main .carousel-inner .carousel-caption{
+        top: 150px;
+        text-align: left;
+    }
+    main .carousel-inner .carousel-caption .cpt2{
+        top: 150px;
+        right: 50px;
+        text-align: left;
+    }
+
+}
+@media (max-width: 538px) { 
+ main .carousel-inner img{
+        height: 300px !important;
+    }
+}
+.delay_1{
+    animation-delay: 400ms;
+}
+.delay_2{
+    animation-delay: 420ms;
+}
+.delay_3{
+    animation-delay: 440ms;
+}
+
+/* 轮播左右按钮 */
+#carousel-example-generic .left,
+#carousel-example-generic .right{
+    z-index: 98;
+}
+
 
 main .text{
 	text-align: center;
@@ -81,52 +202,76 @@ main .text .line,main .litspanner .line,main .future .line{
 main .text .linh25{
 	line-height: 25px;
 }
-/* 小轮播图 */
+                        /* 小轮播图 */-
 main .spanbox{
     background:  #eeefe9;
     padding: 60px 0;
     overflow:hidden;
     position: relative;
+    width: 912px;
+    height: 292px;
+    position: relative;
 }
-main .spanbox .spanner{
-	width: 912px;
+main .spanbox ul{	
 	height: 292px;
-}
-.spanbox ul{
-    width:9999px;
+    width:200%;
     position: relative;
     left:0px;                
 }
 .spanbox .spanner li{
     float: left;
-    width: 16%;
-    margin: 2%;
+    width: 10%;
+    margin-top: 20px;
     text-align: center;
+}
+@media (min-width: 768px) and (max-width: 992px) { 
+    main .spanbox ul{   
+        width:400%;
+              
+    }
+    .spanbox .spanner li{
+        width: 9%;
+    }
+}
+@media (max-width: 768px)  { 
+    main .spanbox ul{   
+        width:1000%;             
+    }
+    .spanbox .spanner li{
+        width: 10%;
+    }
 }
 .spanbox .container{
     padding-left: 0px;
     padding-right: 0px;
 }
+
+.spanbox .describe{
+    display: none;
+}
+.spanbox .describe.current{
+    display: block;
+}
 .spanbox .spanner li img{
     border-radius: 50%;
-    width: 80%;
-    margin-bottom: 10%;
+    width: 50%;
+    margin-bottom: 20px;
 }
 .spanbox span{
    font-size:40px;
    position:absolute;              
-   background:rgba(0, 0, 0, 0.5);
    color:#fff;
    cursor:pointer;
    padding:2px 2px;
+   width: 2%;
 }
 .left{
     left:10px;
-    top:120px;
+    top:80px;
 }
 .right{
     right:10px;
-    top:120px;
+    top:80px;
 }
 
 main .pic>div{
@@ -198,8 +343,8 @@ main .text-pic .part5 .caption p{
     font-size: 12px;
     color: #666;
 }
-/* 手机轮播  */
-main .mobspan{
+                        /* 手机轮播  */
+main .mobSpan{
     background-image: url('../images/shoujibei_icon.jpg');
     background-position: center;
     background-repeat: no-repeat;
@@ -207,14 +352,118 @@ main .mobspan{
     width: 100%;
     height: 660px;
     margin-top: 98px;
+    position: relative;
 }
+.mobSpan .txtBox{
+    padding: 0 15px;
+    line-height: 1.8;
+    position: absolute;
+    left: 630px;
+    top: 150px;
+    color: white;
+}
+.mobSpan .txtBox h4{
+    font-size: 28px;
+    line-height: 40px;
+}
+.mobSpan .txtBox p{
+    font-size: 16px;
+}
+
+.mobSpan .txtBox .line{
+    border-top: 1px solid #3bbe7a;
+    width: 80px;
+    margin: 30px 0px; 
+}
+.mobSpan .txtBox li{
+    display: none;
+}
+.mobSpan .txtBox li.current{
+    display: block;
+}
+.delay_1{
+    animation-delay: 440ms;
+}
+.delay_2{
+    animation-delay: 420ms;
+}
+.delay_3{
+    animation-delay: 400ms;
+}
+
+
+.mobSpan .moblie{
+    position: relative;
+    float: left;
+    background: url('../images/shoujitu.png') no-repeat;
+    width: 310px;
+    height: 800px;
+    background-size: 100%;
+    margin-left: 10%;
+}
+.mobSpan .moblie img{
+    position: absolute;
+    display: block;
+    width: 252px;
+    left: 30px;
+    top: 174px;
+    opacity: 0;   
+}
+/* .mobSpan .moblie img:nth-of-type(2),
+.mobSpan .moblie img:nth-of-type(3),
+.mobSpan .moblie img:nth-of-type(4),
+.mobSpan .moblie img:nth-of-type(5){
+    
+} */
+
+.mobSpan .icon{
+    position: absolute;
+    bottom: 10px;
+    left: 630px;
+    /* clear: both; */
+}
+.mobSpan .icon li{
+    float: left;
+    width: 60px;
+    height: 60px;
+    border: 1px solid white;
+    border-radius: 50%;
+    margin: 10px;
+}
+.mobSpan .icon li:nth-of-type(1){
+    background: url('../images/zlzx.svg');
+}
+.mobSpan .icon li:nth-of-type(2){
+    background: url('../images/jkjc.svg');
+}
+.mobSpan .icon li:nth-of-type(3){
+    background: url('../images/zljh.svg');
+}
+.mobSpan .icon li:nth-of-type(4){
+    background: url('../images/tjsj.svg');
+}
+.mobSpan .icon li:nth-of-type(5){
+    background: url('../images/qygl.svg');
+}
+
+
+
+@media (max-width: 878px) { 
+    .mobSpan .icon {
+        display: none;
+    }
+    .mobSpan .txtBox{
+        display: none;
+     }
+
+}
+
+                        /* 鼓励模块 */
 main .encourage{
     padding: 0px 45px;
 }
 main .encourage .module{
     height: 400px;
-  /*   background: pink;
-    border: 1px solid #000; */
 
 } 
 .encourage .module .dialogue{
@@ -229,11 +478,7 @@ main .encourage .module{
     padding: 40px 20px;
     position: relative;
 }
-/* .encourage .module .dialogue p{
 
-    font-size: 14px;
-}
- */
  .encourage .module .dialogue i{
     float: left;
     background-color: #aaa;
@@ -248,7 +493,6 @@ main .encourage .module{
 .encourage .module .dialogue b{
     position: absolute;
     background: url('../images/position-icon.svg') no-repeat;
-    /* background-size: 10px 10px; */
     width: 28%;
     height: 60%;
     left: -15%;
@@ -277,7 +521,6 @@ main .encourage .module{
 .encourage .module img:nth-of-type(2){
     border-radius: 50%;
     position: absolute;
-    /* width: 15%; */
     height: 20%;
     left: 44%;
     bottom: 91%;
